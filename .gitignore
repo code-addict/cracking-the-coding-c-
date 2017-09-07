@@ -1,0 +1,5 @@
+
+ctci/ctci/bin
+ctci/ctci/obj
+*.suo
+ctci/.vs

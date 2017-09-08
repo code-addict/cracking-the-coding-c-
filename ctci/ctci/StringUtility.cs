@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -77,6 +78,25 @@ namespace ctci
                 strLength = strLength - 1;
             }
             return new string(charArray);
+        }
+
+        public static bool IsPermutationPalindrome(string str)
+        {
+            var checker = 0;
+
+            foreach (var c in str)
+            {
+                var asciiCount = c - 'a';
+
+                if(asciiCount >= 0 && asciiCount <= 25)
+                    checker ^= (1 << asciiCount);
+            }
+
+
+            // Is only 1 bit set?
+            bool isOnly1BitSet = ((checker - 1) & checker) == 0;
+
+            return (checker == 0) || isOnly1BitSet;
         }
     }
 }

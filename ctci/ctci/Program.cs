@@ -16,7 +16,9 @@ namespace ctci
 
             //Console.Write(StringUtility.ArePermutationsOfEachOther("acbcccdsccca", "abcadscccccc"));
 
-            Console.Write(StringUtility.Urlify(" sand  s d ", 21));
+            //Console.Write(StringUtility.Urlify(" sand  s d ", 21));
+
+            Console.Write(StringUtility.IsPermutationPalindrome("ma da'213m"));
             Console.Read();
         }
     }

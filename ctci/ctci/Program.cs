@@ -14,7 +14,9 @@ namespace ctci
             //sp.Permutations("aaaa");
             //Console.Write(StringUtility.IsUnique("absd"));
 
-            Console.Write(StringUtility.ArePermutationsOfEachOther("acbcccdsccca", "abcadscccccc"));
+            //Console.Write(StringUtility.ArePermutationsOfEachOther("acbcccdsccca", "abcadscccccc"));
+
+            Console.Write(StringUtility.Urlify(" sand  s d ", 21));
             Console.Read();
         }
     }
